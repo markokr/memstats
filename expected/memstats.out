@@ -1,0 +1,16 @@
+\i memstats.sql
+CREATE FUNCTION memstats() RETURNS int4 AS '$libdir/memstats' LANGUAGE C;
+select memstats();
+NOTICE:  MEMSTATS 0
+ memstats 
+----------
+        1
+(1 row)
+
+select memstats();
+NOTICE:  MEMSTATS 1
+ memstats 
+----------
+        1
+(1 row)
+

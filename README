@@ -1,0 +1,8 @@
+
+Small PostgreSQL module to expose MemoryContextStats()
+in SQL level.
+
+The output will be in log.
+
+Look tester.py for sample usage.
+
